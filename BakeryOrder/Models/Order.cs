@@ -16,7 +16,7 @@ namespace BakeryOrder.Models
 
     public Order(string orderDate)
     {
-      Date = null;
+      Date = orderDate;
       _instances.Add(this);
       Id = _instances.Count;
     }
