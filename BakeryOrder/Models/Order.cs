@@ -24,7 +24,7 @@ namespace BakeryOrder.Models
     public Order(string orderDate, string orderDescription)
       : this(orderDate)
     {
-      Description = orderDescription;
+      Description = null;
     }
 
     public Order(string orderDate, string orderDescription, string orderPrice)
