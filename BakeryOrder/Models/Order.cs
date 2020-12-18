@@ -5,6 +5,7 @@ namespace BakeryOrder.Models
 {
   public class Order
   {
+    public string Date { get; set; }
     public string Description { get; set; }
 
     public string Price { get; set; }
@@ -13,11 +14,13 @@ namespace BakeryOrder.Models
 
     private static List<Order> _instances = new List<Order> {};
 
-    public Order(string orderDescription, string orderPrice)
+    public Order(string orderDate, string orderDescription, string orderPrice)
     {
+      Date = orderDate;
       Description = orderDescription;
       Price = orderPrice;
       _instances.Add(this);
+      
     }
   }
 }
