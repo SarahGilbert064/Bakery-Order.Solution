@@ -7,3 +7,9 @@
   <h3>You currently have no vendors :[</h3>
 }
 
+@foreach (Vendor vendor in Model)
+{
+  <h3><a href="/vendors/vendor.Id">@vendor.Name</a></h3>
+}
+
+<p><a href="/">Back to Main Menu</a></p>
