@@ -1,10 +1,23 @@
 using System.Collections.Generic;
 
 
-namespace Order.Models
+namespace BakeryOrder.Models
 {
   public class Order
   {
+    public string Description { get; set; }
 
+    public string Price { get; set; }
+
+    public int Id { get; }
+
+    private static List<Order> _instances = new List<Order> {};
+
+    public Order(string orderDescription, string orderPrice)
+    {
+      Description = orderDescription;
+      Price = orderPrice;
+      _instances.Add(this);
+    }
   }
 }
