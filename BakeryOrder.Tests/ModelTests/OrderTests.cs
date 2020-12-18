@@ -69,6 +69,17 @@ namespace BakeryOrder.Tests
     }
 
     [TestMethod]
+    public void GetId_OrdersInstantiateWithAnIdAndGetterReturns_Int()
+    {
+      string date = "June 4th";
+      Order newOrder = new Order(date);
+
+      int result = newOrder.Id;
+
+      Assert.AreEqual(2, result);
+    }
+
+    [TestMethod]
     public void Find_ReturnsCorrectOrder_Order()
     {
       string description01 = "1 loaf of bread";
