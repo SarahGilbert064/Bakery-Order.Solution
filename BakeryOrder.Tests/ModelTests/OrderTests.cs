@@ -32,17 +32,6 @@ namespace BakeryOrder.Tests
     }
 
     [TestMethod]
-    public void GetDescription_ReturnDescription_String()
-    {
-      string description = "1 loaf of bread";
-
-      Order newOrder = new Order(description);
-      string result = newOrder.Description;
-
-      Assert.AreEqual(description, result);
-    }
-
-    [TestMethod]
     public void GetAll_ReturnsEmptyList_OrderList()
     {
       List<Order> newList = new List<Order> {};
@@ -51,27 +40,20 @@ namespace BakeryOrder.Tests
 
       CollectionAssert.AreEqual(newList, result);
     }
+
+    [TestMethod]
+    public void Find_ReturnsCorrectOrder_Order()
+    {
+      string description01 = "1 loaf of bread";
+      string description02 = "1 pastry";
+      Order newOrder1 = new Order(description01);
+      Order newOrder2 = new Order(description02);
+
+      Order result = Order.Find(2);
+
+      Assert.AreEqual(newOrder2, result);
+    }
   }
 }
 
 
-
-    // [TestMethod]
-    // public void SetDateDescriptionAndPrice_ReturnDateDescriptionAndPrice_String()
-    // {
-    //   string date = "June 4th";
-    //   string description = "1 loaf of bread";
-    //   string price = "$8.00";
-    //   Order newOrder = new Order(date, description, price);
-
-    //   string updatedDate = "July 5th";
-    //   string updatedDescription = "1 pastry";
-    //   string updatedPrice = "$2.00";
-    //   newOrder.Date = updatedDate;
-    //   newOrder.Description = updatedDescription;
-    //   newOrder.Price = updatedPrice;
-    //   string resultDate = newOrder.Date;
-    //   string resultDescription = newOrder.Description;
-    //   string resultPrice = newOrder.Price;
-
-    //   Assert.AreEqual(updatedDate, updatedDescription, updatedPrice, resultDate, resultDescription, resultPrice);

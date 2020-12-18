@@ -24,7 +24,7 @@ namespace BakeryOrder.Models
     public Order(string orderDate, string orderDescription)
       : this(orderDate)
     {
-      Description = null;
+      Description = orderDescription;
     }
 
     public Order(string orderDate, string orderDescription, string orderPrice)
@@ -43,5 +43,9 @@ namespace BakeryOrder.Models
       _instances.Clear();
     }
 
+    public static Order Find(int searchId)
+    {
+      return _instances[searchId-2];
+    }
   }
 }
