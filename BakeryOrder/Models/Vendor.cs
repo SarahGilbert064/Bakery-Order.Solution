@@ -38,7 +38,7 @@ namespace BakeryOrder.Models
 
     public void AddOrder(Order order)
     {
-      Orders.Add(null);
+      Orders.Add(order);
     }
   }
 }
