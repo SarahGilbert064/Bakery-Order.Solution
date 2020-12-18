@@ -17,8 +17,6 @@ namespace BakeryOrder.Models
     public Order(string orderDate)
     {
       Date = orderDate;
-      // Description = orderDescription;
-      // Price = orderPrice;
       _instances.Add(this);
       Id = _instances.Count;
     }
@@ -44,5 +42,6 @@ namespace BakeryOrder.Models
     {
       _instances.Clear();
     }
+
   }
 }
