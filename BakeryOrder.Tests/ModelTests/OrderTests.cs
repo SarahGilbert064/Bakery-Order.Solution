@@ -25,7 +25,7 @@ namespace BakeryOrder.Tests
         Order newOrder = new Order(date, description, price);
         string result = newOrder.Description;
 
-        Assert.AreEqual(1, result);
+        Assert.AreEqual(description, result);
       }
     }
 }
