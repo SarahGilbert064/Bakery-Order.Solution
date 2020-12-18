@@ -55,6 +55,20 @@ namespace BakeryOrder.Tests
     }
 
     [TestMethod]
+    public void GetAll_ReturnsOrders_OrderList()
+    {
+      string date01 = "June 4th";
+      string date02 = "July 5th";
+      Order newOrder1 = new Order(date01);
+      Order newOrder2 = new Order(date02);
+      List<Order> newList = new List<Order> { newOrder1, newOrder2 };
+
+      List<Order> result = Order.GetAll();
+
+      CollectionAssert.AreEqual(newList, result);
+    }
+
+    [TestMethod]
     public void Find_ReturnsCorrectOrder_Order()
     {
       string description01 = "1 loaf of bread";
