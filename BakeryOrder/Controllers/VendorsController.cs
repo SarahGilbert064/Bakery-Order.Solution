@@ -6,6 +6,6 @@ namespace BakeryOrder.Controllers
 {
   public class VendorsController : Controller
   {
-
+    
   }
 }
