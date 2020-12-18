@@ -35,7 +35,7 @@ namespace BakeryOrder.Models
 
     public static List<Order> GetAll()
     {
-      return null;
+      return _instances;
     }
 
     public static void ClearAll()
