@@ -32,6 +32,19 @@ namespace BakeryOrder.Tests
     }
 
     [TestMethod]
+    public void SetDate_SetDate_String()
+    {
+      string date = "June 4th";
+      Order newOrder = new Order(date);
+
+      string updatedDate = "July 5th";
+      newOrder.Date = updatedDate;
+      string result = newOrder.Date;
+
+      Assert.AreEqual(updatedDate, result);
+    }
+
+    [TestMethod]
     public void GetAll_ReturnsEmptyList_OrderList()
     {
       List<Order> newList = new List<Order> {};
