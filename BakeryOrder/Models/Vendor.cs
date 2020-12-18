@@ -27,7 +27,7 @@ namespace BakeryOrder.Models
 
     public static List<Vendor> GetAll()
     {
-      return null;
+      return _instances;
     }
   }
 }
