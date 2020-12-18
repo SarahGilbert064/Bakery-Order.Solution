@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\epicodus\\Independent-Projects\\Bakery-Order.Solution\\BakeryOrder\\ProjectName.csproj": {}
+    "e:\\Epicodus\\Independent-Projects\\Bakery-Order.Solution\\BakeryOrder\\ProjectName.csproj": {}
   },
   "projects": {
-    "E:\\epicodus\\Independent-Projects\\Bakery-Order.Solution\\BakeryOrder\\ProjectName.csproj": {
+    "e:\\Epicodus\\Independent-Projects\\Bakery-Order.Solution\\BakeryOrder\\ProjectName.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\epicodus\\Independent-Projects\\Bakery-Order.Solution\\BakeryOrder\\ProjectName.csproj",
+        "projectUniqueName": "e:\\Epicodus\\Independent-Projects\\Bakery-Order.Solution\\BakeryOrder\\ProjectName.csproj",
         "projectName": "ProjectName",
-        "projectPath": "E:\\epicodus\\Independent-Projects\\Bakery-Order.Solution\\BakeryOrder\\ProjectName.csproj",
+        "projectPath": "e:\\Epicodus\\Independent-Projects\\Bakery-Order.Solution\\BakeryOrder\\ProjectName.csproj",
         "packagesPath": "C:\\Users\\sarah\\.nuget\\packages\\",
-        "outputPath": "E:\\epicodus\\Independent-Projects\\Bakery-Order.Solution\\BakeryOrder\\obj\\",
+        "outputPath": "e:\\Epicodus\\Independent-Projects\\Bakery-Order.Solution\\BakeryOrder\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
