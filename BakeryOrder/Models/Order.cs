@@ -45,7 +45,7 @@ namespace BakeryOrder.Models
 
     public static Order Find(int searchId)
     {
-      return _instances[searchId-2];
+      return _instances[searchId-1];
     }
   }
 }
