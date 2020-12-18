@@ -14,18 +14,35 @@ namespace BakeryOrder.Models
 
     private static List<Order> _instances = new List<Order> {};
 
-    public Order(string orderDate, string orderDescription, string orderPrice)
+    public Order(string orderDate)
     {
       Date = orderDate;
-      Description = orderDescription;
-      Price = orderPrice;
+      // Description = orderDescription;
+      // Price = orderPrice;
       _instances.Add(this);
       Id = _instances.Count;
     }
 
+    public Order(string orderDate, string orderDescription)
+      : this(orderDate)
+    {
+      Description = orderDescription;
+    }
+
+    public Order(string orderDate, string orderDescription, string orderPrice)
+      : this(orderDate, orderDescription)
+    {
+      Price = orderPrice;
+    }  
+
     public static List<Order> GetAll()
     {
-      return null;
+      return _instances;
+    }
+
+    public static void ClearAll()
+    {
+      _instances.Clear();
     }
   }
 }
