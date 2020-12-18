@@ -31,6 +31,17 @@ namespace BakeryOrder.Tests
       Assert.AreEqual(date, result);
     }
 
+    // [TestMethod]
+    // public void GetDescription_ReturnDescription_String()
+    // {
+    //   string description = "1 loaf of bread";
+
+    //   Order newOrder = new Order(description);
+    //   string result = newOrder.Description;
+
+    //   Assert.AreEqual(description, result);
+    // }
+
     [TestMethod]
     public void GetAll_ReturnsEmptyList_OrderList()
     {
