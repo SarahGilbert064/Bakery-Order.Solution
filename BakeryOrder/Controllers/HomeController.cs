@@ -10,15 +10,5 @@ namespace BakeryOrder.Controllers
     {
       return View();
     }
-
-
-
-    //example of route when wanting to use images
-    // [Route("/favorite_photos")]
-    // public ActionResult FavoritePhotos()
-    // {
-    //   return View();
-    // }
-
   }
 }

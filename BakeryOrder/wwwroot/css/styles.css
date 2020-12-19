@@ -1,9 +1,32 @@
-div#footer {
-  position:fixed;
-  bottom:0px;
-  left:0px;
-  width:100%;
-  color:#CCC;
-  background:#333;
-  padding:8px;
+
+body {
+  background-image:url(https://image.shutterstock.com/image-photo/delicious-loaves-bread-german-baker-260nw-1544878508.jpg);
+  font-family: 'Courier New', Courier, monospace;
+  background-color: rgb(223, 224, 224);
+  box-sizing: border-box;
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
 }
+
+.jumbotron {
+  border: 12px black;
+  background-color: rgb(224, 235, 245);
+  color: rgb(70, 70, 70);
+  padding: 34px;
+  box-sizing: border-box;
+  border-style: groove;
+  border-radius: 0 0 85% 85% / 30%;
+}
+
+/* .container {
+  margin: auto;
+  padding: 4%;
+  max-width: 60rem;
+}
+
+p {
+  color: rgb(75, 36, 36);
+} */

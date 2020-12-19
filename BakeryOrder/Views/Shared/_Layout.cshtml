@@ -1,15 +1,16 @@
-@* <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>TODO</title>
+    <title>Pretty Baked Bakery</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
     <link rel="stylesheet" href="~/css/styles.css">
   </head>
   <body>
-    @RenderBody()
-    @Html.Partial("Footer")
-    
-    can use the @Html.Partial() in any view, not just a layout file
+    <div class="container">
+      <div class="jumbotron">
+        @RenderBody()
+      </div>
+    </div>
   </body>
-</html> *@
+</html>
