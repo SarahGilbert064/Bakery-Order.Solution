@@ -12,7 +12,7 @@
 
   
 
-#####  This project was created to help better my understanding of creating and running a web application. When a user enters the site, they will be greeted with a splash page providing the user with a link to a "Vendor" page. Once on the vendor page, the user will be able to add vendors or access current one's listed. When the user clicks or creates a vendor, they will then have access to all of that vendor's information. This information will consist of orders, descriptions of the orders, price, and the date the order was made. As order's are filled, the user will have the option to delete finished/delivered orders.
+#####  This project was created to help better my understanding of creating and running a web application. When a user enters the site, they will be greeted with a splash page providing the user with a link to a "Vendor" page. Once on the vendor page, the user will be able to add vendors or access current one's listed. When the user clicks or creates a vendor, they will then have access to all of that vendor's information. This information will consist of orders that vendor made, descriptions of the orders, price, and the date the order was made.
 
   
 
@@ -69,17 +69,18 @@
 * CSS
 
 * JavaScript
+ 
+* C#
 
-* JQuery
+* Bootstrap
 
 * Visual Studio Code
 
-* Jest
+* .Net Core 2.2
 
-* esLint
+* MS Test Framework 1.3.2
 
-* Babel
-
+* Ms Test Adapter 1.3.2
   
 
 ## Legal
